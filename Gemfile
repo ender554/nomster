@@ -57,3 +57,4 @@ source 'https://rails-assets.org' do
 end
 gem 'will_paginate'
 gem 'simple_form'
+gem 'font-awesome-rails'
