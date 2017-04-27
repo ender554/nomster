@@ -1,4 +1,5 @@
 class Place < ApplicationRecord
+  belongs_to :user
 
   def self.search(place, page)
   if place
