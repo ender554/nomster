@@ -1,5 +1,6 @@
 class Place < ApplicationRecord
   belongs_to :user
+  validates :name, presence: true
 
   def self.search(place, page)
   if place
