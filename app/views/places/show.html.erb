@@ -44,7 +44,7 @@
 <div class="clear"></div>
 <div class="clear"></div>
 <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
-  <%= f.input :image, as: :file, label: "Upload Image " %>
+  <%= f.input :picture %>
   <%= f.button :submit %>
 <% end %>
 
