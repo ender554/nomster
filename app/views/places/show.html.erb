@@ -42,7 +42,11 @@
   </div>
 </div>
 <div class="clear"></div>
-
+<div class="clear"></div>
+<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+  <%= f.input :image, as: :file, label: "Upload Image " %>
+  <%= f.button :submit %>
+<% end %>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
