@@ -102,3 +102,9 @@
     </div>
   <% end %>
 </div>
+<h1>Photos</h1>
+<% @place.photos.each do |photo| %>
+  <div class="booyah-box">
+    <%= photos.photo %>
+  </div>
+<% end %>
